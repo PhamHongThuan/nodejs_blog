@@ -22,13 +22,25 @@
     "url": "https://github.com/PhamHongThuan/nodejs_blog/issues"
   },
   "homepage": "https://github.com/PhamHongThuan/nodejs_blog#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4"
   },
   "devDependencies": {
     "gulp-cli": "^2.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.3",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.13",
+    "npm": "^8.1.1",
+    "prettier": "^2.4.1"
   }
 }
