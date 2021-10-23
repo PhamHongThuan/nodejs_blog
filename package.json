@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pre-commit": "lint-staged"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -28,7 +27,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pre-commit"
+      "pre-commit": "lint-staged"
     }
   },
   "dependencies": {
@@ -37,7 +36,7 @@
   },
   "devDependencies": {
     "gulp-cli": "^2.3.0",
-    "husky": "^7.0.4",
+    "husky": "^4.2.5",
     "lint-staged": "^11.2.3",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.13",
